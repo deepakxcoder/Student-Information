@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title> Forms</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <form name="myForm" method="get" onsubmit="SubmitButton(event)">
+            <h1> Personal Information</h1> 
+
+         <fieldset>   <label for="fname"> Full Name : </label><br>
+            <input type="text" id="fname" required> <br><br>
+            <label for="mail"> Email : </label><br>
+            <input type="text" id="mail" required> <br><br>
+            <label for="cnum"> Contact Number : </label><br>
+            <span>+91</span><input type="text" id="cnum" required> <br><br>
+
+            <label for="dte"> Feedback Date : </label><br>
+            <input type="date" id="dte" required> <br><br>
+        </fieldset>
+
+            <!-- Starting course details!-->
+             <fieldset>
+            <h1> Course Details</h1>
+            <!-- Add Drop down list of courses-->
+
+            <select id="cname" required>
+                <option value="">-- Select a Course --</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+              </select>
+              
+
+            <label for="Iname"> Instructor Name : </label><br>
+            <input type="text" id="Iname" required> <br><br>
+        </fieldset>
+            
+            <!-- Starting FeedBack Sections!-->
+             <fieldset>
+            <h1> Feedback Section</h1> 
+
+            <input type="radio" name="rating" id="r1" required>
+            <label for="r1"> Rating 1</label> <br>
+
+            <input type="radio" name="rating" id="r2" required>
+            <label for="r2"> Rating 2</label> <br>
+
+            <input type="radio" name="rating" id="r3" required>
+            <label for="r3"> Rating 3</label> <br>
+
+            <input type="radio" name="rating" id="r4" required>
+            <label for="r4"> Rating 4</label> <br>
+
+            <input type="radio" name="rating" id="r5" required>
+            <label for="r5"> Rating 5</label> <br><br>
+            <h2> Recommend This Course</h2>
+            <input type="radio" name="yes" id="yes" required>
+            <label for="yes">Yes</label><br>
+            <input type="radio" name="yes" id="no" required>
+            <label for="no">No</label><br>
+
+            <h2> Additional Content</h2>
+            <textarea rows="10" cols="20" required></textarea>
+            <br> <br>
+        </fieldset>
+            <input type="submit" id="submitB">
+            <input type="reset">
+        </form>
+        <table>
+            <thead>
+                <th>Full Name</th>
+                <th>Contact Number</th>
+                <th>Email Address</th>
+                <th>Feedback Date</th>
+                <th>Course Name</th>
+                <th>Instructor Name</th>
+            </thead>
+            <tbody id="t1">
+
+            </tbody>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>
